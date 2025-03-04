@@ -16,10 +16,9 @@ def convert_units(value, from_unit, to_unit):
         return value * conversion
     else:
         return "Conversion not available"
-    
-st.title("Unit Converter")
+st.set_page_config(page_title="Unit Converter", page_icon=":bar_chart:", layout="centered")
 
-value = st.number_input("Enter value:", value=0.0)
+value = st.number_input("Enter value:", value=1.0, step=1.0)
 unit_from = st.selectbox("From unit:", ["meter", "kilometer", "gram", "kilogram"])
 unit_to = st.selectbox("To unit:", ["meter", "kilometer", "gram", "kilogram"])
 
