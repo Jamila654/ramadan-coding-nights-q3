@@ -9,8 +9,13 @@ MOOD_FILE = 'mood.csv'
 
 def load_mood_data():
     if not os.path.exists(MOOD_FILE):
+        df = pd.DataFrame(columns=['Date', 'Mood'])
+        df.to_csv(MOOD_FILE, index=False)
+        return df
+    try:
+        return pd.read_csv(MOOD_FILE)
+    except pd.errors.EmptyDataError:
         return pd.DataFrame(columns=['Date', 'Mood'])
-    return pd.read_csv(MOOD_FILE)
 
 def save_mood_data(date, mood):
     with open(MOOD_FILE, 'a') as f:
