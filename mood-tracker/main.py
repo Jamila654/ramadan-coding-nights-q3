@@ -20,20 +20,15 @@ def save_mood_data(date, mood):
 st.set_page_config(page_title='Mood Tracker', page_icon=':smiley:')    
 st.title('Mood Tracker')
 today = datetime.date.today()
-mood_data = load_mood_data()
 
-if str(today) in mood_data['Date'].values:
-    st.warning('You have already logged your mood for today!')
-    st.write('Your mood for today is:')
-    st.write(mood_data.loc[mood_data['Date'] == str(today)]['Mood'].iloc[0])
-    st.write('To update your mood, please wait until tomorrow.')
-else:
-    st.subheader("How are you feeling today?")
-    mood = st.selectbox('Select mood:', ['Happy', 'Sad', 'Neutral', 'Angry'])
-    if st.button('Save Mood'):
-     save_mood_data(today, mood)
-     st.success('Mood saved successfully!')
-     st.balloons()
+
+
+st.subheader("How are you feeling today?")
+mood = st.selectbox('Select mood:', ['Happy', 'Sad', 'Neutral', 'Angry'])
+if st.button('Save Mood'):
+    save_mood_data(today, mood)
+    st.success('Mood saved successfully!')
+    st.balloons()
     
     
 mood_data = load_mood_data()
