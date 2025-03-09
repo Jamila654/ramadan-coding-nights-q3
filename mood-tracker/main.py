@@ -42,12 +42,6 @@ if not mood_data.empty:
     mood_data['Date'] = pd.to_datetime(mood_data['Date'])
     mood_count = mood_data.groupby('Mood').count()['Date']
     st.bar_chart(mood_count)
-    
-if str(today) in mood_data['Date'].values:
-    st.warning('You have already logged your mood for today!')
-    st.write('Your mood for today is:')
-    st.write(mood_data.loc[mood_data['Date'] == str(today)]['Mood'].iloc[0])
-    st.write('To update your mood, please wait until tomorrow.')
 
 
 st.write("built with ❤️ by [Jamila](https://github.com/Jamila654/ramadan-coding-nights-q3)")
