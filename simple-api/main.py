@@ -1,6 +1,7 @@
 #type: ignore
 from fastapi import FastAPI
 import random
+import uvicorn
 
 app = FastAPI()
 
@@ -57,3 +58,5 @@ def get_money_quotes(api_key: str):
     return {"money_quote": random.choice(money_quotes)}
 
 
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000)
