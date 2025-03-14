@@ -1,0 +1,72 @@
+[
+    {
+        "title": "It Starts with Us",
+        "author": "Colleen Hoover",
+        "publication_year": "2022",
+        "genre": "Fiction",
+        "is_read": true
+    },
+    {
+        "title": "The Silent Patient",
+        "author": "Alex Michaelides",
+        "publication_year": "2019",
+        "genre": "Thriller",
+        "is_read": false
+    },
+    {
+        "title": "Where the Crawdads Sing",
+        "author": "Delia Owens",
+        "publication_year": "2018",
+        "genre": "Fiction",
+        "is_read": true
+    },
+    {
+        "title": "The Night Circus",
+        "author": "Erin Morgenstern",
+        "publication_year": "2011",
+        "genre": "Fantasy",
+        "is_read": false
+    },
+    {
+        "title": "Atomic Habits",
+        "author": "James Clear",
+        "publication_year": "2018",
+        "genre": "Self-Help",
+        "is_read": true
+    },
+    {
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "publication_year": "1937",
+        "genre": "Fantasy",
+        "is_read": true
+    },
+    {
+        "title": "Educated",
+        "author": "Tara Westover",
+        "publication_year": "2018",
+        "genre": "Memoir",
+        "is_read": false
+    },
+    {
+        "title": "The Vanishing Half",
+        "author": "Brit Bennett",
+        "publication_year": "2020",
+        "genre": "Fiction",
+        "is_read": true
+    },
+    {
+        "title": "Sapiens",
+        "author": "Yuval Noah Harari",
+        "publication_year": "2014",
+        "genre": "History",
+        "is_read": false
+    },
+    {
+        "title": "The Song of Achilles",
+        "author": "Madeline Miller",
+        "publication_year": "2011",
+        "genre": "Mythology",
+        "is_read": true
+    }
+]
