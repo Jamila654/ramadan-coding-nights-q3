@@ -32,6 +32,7 @@ def oauth_callback(
 
 @cl.on_chat_start
 async def start():
+    
     cl.user_session.set("history",[])
     await cl.Message(content="Hello! How can I help you today?").send()
 @cl.on_message
